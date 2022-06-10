@@ -1,0 +1,446 @@
+:root {
+  --primary-color: #ffe800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: inline;
+}
+
+/* navabr */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f3f3f3;
+  margin: 0 auto;
+  height: 60px;
+}
+
+nav .logo img {
+  width: 50%;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  transition: all 0.5s;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -6px;
+  top: -4px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #403f3f;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+/* navabr */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* home */
+#beranda {
+  padding-top: 60px;
+}
+
+.row-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  padding-bottom: 8px;
+}
+
+h1 span {
+  color: var(--primary-color);
+}
+
+p {
+  font-size: 1em;
+  padding-bottom: 8px;
+}
+
+button {
+  padding: 15px;
+  margin: 8px 5px 0 0;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+button:hover {
+  background-color: #d5c50e;
+}
+
+button a {
+  text-decoration: none;
+  color: #000;
+}
+/* home */
+
+/* produk */
+#produk {
+  margin-top: 60px;
+  padding-top: 60px;
+}
+
+.row-produk-title {
+  text-align: center;
+}
+
+.row-produk-title h2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+h2 span {
+  color: var(--primary-color);
+}
+
+.row-produk {
+  margin-top: 20px;
+}
+
+.col-produk {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-produk {
+  margin: 10px;
+}
+
+.card-produk img {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  position: relative;
+  z-index: -2;
+}
+
+figcaption {
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  top: -70px;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+  font-weight: 600;
+  z-index: -1;
+}
+/* produk */
+
+/* tentang kami */
+#tentangkami {
+  margin-top: 60px;
+  padding-top: 60px;
+}
+
+.row-tentangkami-titile {
+  text-align: center;
+  z-index: -1;
+  position: relative;
+}
+
+.row-tentangkami-titile h2 {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.row-tentangkami {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  margin: 0 20px 0 0;
+}
+
+.col h2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.col img {
+  width: 100%;
+}
+/* tentang kami */
+
+aside {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* kontak */
+#kontak {
+  margin-top: 60px;
+  padding-top: 60px;
+}
+
+.row-kontak-title h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.row-kontak {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.col-kontak {
+  width: 400px;
+  height: 500px;
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.col-kontak h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.nama-depan {
+  width: 45%;
+  float: left;
+}
+
+.nama-belakang {
+  width: 45%;
+  float: right;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background-color: #d5c50e;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+/* profile */
+.col-card-profile {
+  width: 300px;
+  height: 360px;
+  background-color: #f3f3f3;
+  box-shadow: 1px 2px 2px #f3f3f3;
+  padding: 20px;
+  z-index: -1;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.card img {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-card {
+  text-align: center;
+
+  color: #000;
+}
+/* profile */
+
+/* kontak */
+
+/* footer */
+footer {
+  margin-top: 25px;
+  padding: 20px;
+  color: #000;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+/* footer */
+
+/* responsive */
+@media screen and (max-width: 999px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /* navabr */
+  nav .logo img {
+    width: 50%;
+    padding-bottom: 5px;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 2px 0 #dddddd;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: -1;
+    transform: translateY(-100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul li {
+    padding-left: 0;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  /* navabr */
+
+  /* home */
+  #beranda {
+    padding-top: 55px;
+  }
+
+  .row-home {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .col-img img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  /* home */
+
+  /* tentangkami */
+  .row-tentangkami {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  .col {
+    margin: 0;
+  }
+  /* tentangkami */
+
+  /* kontak */
+  .row-kontak {
+    flex-direction: column;
+  }
+
+  .col-card-profile {
+    margin: 20px 0;
+  }
+  /* kontak */
+}
